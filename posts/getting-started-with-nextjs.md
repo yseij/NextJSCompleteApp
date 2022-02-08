@@ -2,7 +2,7 @@
 title: "getting started with nextJS"
 date: "2022-10-15"
 image: "getting-started-nextjs.png"
-exceprt: "nextjs is goed"
+excerpt: "nextjs is goed"
 isFeatured: true
 ---
 
