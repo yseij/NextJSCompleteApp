@@ -25,7 +25,7 @@ async function handler(req, res) {
     let client;
     try {
       client = await MongoClient.connect(
-        "mongodb+srv://nestjs:234@cluster0.o0r9z.mongodb.net/my-site?retryWrites=true&w=majority"
+        "mongodb+srv://nestjs:@cluster0.o0r9z.mongodb.net/my-site?retryWrites=true&w=majority"
       );
     } catch (error) {
       res.status(500).json({ message: "kon niet conecten met db" });
