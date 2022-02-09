@@ -23,10 +23,11 @@ async function handler(req, res) {
     };
 
     let client;
+
+    const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.o0r9z.mongodb.net/${process.env.mongobd_database}?retryWrites=true&w=majority`;
+
     try {
-      client = await MongoClient.connect(
-        "mongodb+srv://nestjs:@cluster0.o0r9z.mongodb.net/my-site?retryWrites=true&w=majority"
-      );
+      client = await MongoClient.connect(connectionString);
     } catch (error) {
       res.status(500).json({ message: "kon niet conecten met db" });
       return;
