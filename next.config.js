@@ -5,7 +5,7 @@ module.exports = (phase) => {
     return {
       env: {
         mongodb_username: "nestjs",
-        mongodb_password: "",
+        mongodb_password: "1234",
         mongodb_clustername: "cluster0",
         mongobd_database: "my-site-dev",
       },
@@ -14,7 +14,7 @@ module.exports = (phase) => {
   return {
     env: {
       mongodb_username: "nestjs",
-      mongodb_password: "",
+      mongodb_password: "1234",
       mongodb_clustername: "cluster0",
       mongobd_database: "my-site",
     },
